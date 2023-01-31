@@ -1,0 +1,29 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  info:
+    env:
+      enabled: true
+
+server:
+  port: 8090
+
+info:
+  application:
+    name: Productos API REST
+    description: Una API Rest para productos comunicado a MySQL
+    author: Omar Arvelo
+    version: '1'
+
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+  profiles:
+    active: prod
