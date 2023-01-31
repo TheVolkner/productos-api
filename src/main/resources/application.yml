@@ -26,4 +26,4 @@ spring:
       hibernate:
         format_sql: true
   profiles:
-    active: dev
+    active: prod
